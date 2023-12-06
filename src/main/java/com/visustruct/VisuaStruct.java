@@ -16,18 +16,14 @@ public class VisuaStruct extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(VisuaStruct.class.getResource("main-menu.fxml"));
         Parent root = fxmlLoader.load();
 
-        // Set the controller and stage instance
         Controller controller = fxmlLoader.getController();
         controller.setStage(stage);
 
         Scene scene = new Scene(root, 800, 600);
         stage.setTitle("VisuaStruct - Main Menu");
         stage.setScene(scene);
-
-        // Disable resizing
         stage.setResizable(false);
 
-        // Set the icon
         Image image = new Image("file:src/main/resources/assets/icon.png");
         stage.getIcons().add(image);
         stage.show();
