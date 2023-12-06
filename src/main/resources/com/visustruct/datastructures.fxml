@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.DataStructuresMenu">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandler" text="Back to Main Menu" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="416.0" layoutY="77.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/queue.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="8.0" text="Queue">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="117.0" mnemonicParsing="false" onAction="#queueHandler" text="Explore Now" />
+                        <Label layoutX="80.0" layoutY="43.0" prefHeight="70.0" prefWidth="220.0" text="A queue is a linear data structure that follows the First In, First Out (FIFO) principle, where elements are added at the rear and removed from the front. resembling a real-life queue or line." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="86.0" layoutY="252.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/array.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Array">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="An array is a linear data structure for storing elements with random access. Elements are accessed by their indices in contiguous memory locations." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#arrayHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="86.0" layoutY="75.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/stack.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Stack">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="A stack is a last-in, first-out (LIFO) data structure where elements are added and removed from the top, allowing only the most recently added item to be accessed." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#stackHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="416.0" layoutY="252.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/stack.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Tree">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="A tree is a hierarchical data structure where elements, called nodes, are organized in a branching structure. Each node in the tree contains a value and may have child nodes." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#treeHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="283.0" text="Data Structures">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

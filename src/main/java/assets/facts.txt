@@ -1,0 +1,100 @@
+Stacks follow the Last In, First Out (LIFO) principle.
+Common operations on stacks include push (addition) and pop (removal).
+Used in function call management (call stack) in programming languages.
+Browser history is often implemented using a stack.
+Undo functionality in applications is achieved using a stack.
+Can be implemented with arrays or linked lists.
+Memory management in operating systems often involves a stack.
+Used for backtracking algorithms in artificial intelligence.
+Expression evaluation and syntax parsing use stacks.
+Functionality similar to a stack is found in the recursion mechanism.
+Can be employed for managing temporary data in algorithms.
+Task management in an operating system often involves a stack.
+Ideal for applications where the order of operations is critical.
+Efficient for managing limited memory space.
+Compiler parsing uses a stack for syntax analysis.
+Can be implemented using hardware registers in computer architecture.
+Found in algorithms like depth-first search (DFS) in graph traversal.
+Used in algorithms involving tracking of states and configurations.
+Stack frames in programming languages represent individual function calls.
+Undo/redo functionality in text editors is often implemented using stacks.
+Simplifies algorithm implementation by managing function calls.
+The execution history of a program is tracked using a stack.
+Applications with nested structures can benefit from stack data structures.
+Used in algorithms to find strongly connected components in graphs.
+Stack-based languages like Forth rely heavily on stack data structures.
+Linked lists consist of nodes linked together by pointers.
+Elements in a linked list are not stored in contiguous memory locations.
+Two common types are singly linked lists and doubly linked lists.
+Dynamic memory allocation is often used in linked list implementation.
+Efficient for insertions and deletions in the middle of the list.
+Memory is allocated as needed during runtime in linked lists.
+Used in memory allocation strategies like the buddy system.
+Effective for implementing data structures like queues and stacks.
+Often used in sparse matrix representation.
+Circular linked lists connect the last node to the first.
+Linked lists are fundamental in implementing symbol tables.
+File systems often use linked lists for managing file blocks.
+Suitable for applications where constant-time insertions are crucial.
+Dynamic data structures where size can change during runtime.
+Memory-efficient for large datasets with frequent insertions/deletions.
+Implemented in memory management schemes like paging.
+Used in memory allocation for variable-sized objects.
+Applications involving frequent dynamic memory allocation use linked lists.
+Suitable for situations where the size of data is unpredictable.
+Polynomial manipulation in algebra can be done using linked lists.
+Graph adjacency lists are often implemented using linked lists.
+Used in network routing algorithms to represent connectivity.
+Real-time systems benefit from dynamic memory allocation in linked lists.
+Suitable for applications with variable memory requirements.
+Linked lists are employed in implementing hash tables for collision resolution.
+Queues follow the First In, First Out (FIFO) principle.
+Common operations include enqueue (addition) and dequeue (removal).
+Print job scheduling in operating systems is often done using queues.
+Task scheduling in computer systems uses a queue data structure.
+Breadth-first search (BFS) in graph algorithms utilizes queues.
+Used in managing resources in networking, such as routers.
+Disk scheduling algorithms use queues for optimal data access.
+Print spooling in operating systems uses queues to manage print jobs.
+Queues are essential in simulations and modeling systems.
+Used in real-time systems for task execution prioritization.
+Message queuing systems in distributed computing rely on queues.
+Buffers in communication systems are often implemented as queues.
+Job scheduling in batch processing systems involves queues.
+Task management in multitasking operating systems is queue-based.
+Used in breadth-first traversal of hierarchical structures.
+Queues are employed in handling requests in web servers.
+Event-driven systems use queues for asynchronous processing.
+Print job handling in networked printers involves queue management.
+Task management in embedded systems often involves queue structures.
+Used in systems where tasks need to be processed in order of arrival.
+Background processes in operating systems are managed using queues.
+Queues are crucial in job scheduling for parallel processing.
+Used in managing resources in cloud computing environments.
+Multi-level feedback queue scheduling is used in CPU scheduling.
+Queues are employed in transaction processing systems for data integrity.
+Arrays store elements of the same data type in contiguous memory locations.
+Accessing elements in an array is done through indexing.
+Fixed-size, static data structure with a constant time for element access.
+Memory is allocated at compile time for arrays.
+Used in implementing matrices and multi-dimensional data structures.
+Efficient for scenarios where random access to elements is required.
+Suitable for applications with a known and constant size.
+Commonly used for implementing look-up tables and dictionaries.
+Sorting algorithms often use arrays for data manipulation.
+Used in algorithms like binary search for fast element retrieval.
+Cache locality is advantageous in array-based data structures.
+Memory-efficient for small to medium-sized datasets.
+Arrays are used in dynamic programming for memoization.
+Application of arrays includes image processing for pixel manipulation.
+Elements in an array are stored in a contiguous block of memory.
+Often employed in implementing stacks and queues.
+Used in representing polynomials and algebraic expressions.
+Suitable for scenarios where constant-time complexity is critical.
+Array-based data structures are common in database systems.
+Physical simulation algorithms benefit from array data structures.
+Efficient for scenarios where elements are accessed sequentially.
+Used in signal processing applications for data storage.
+Dynamic arrays (like ArrayList in Java) allow for flexible sizing.
+In embedded systems, arrays are used for efficient memory utilization.
+Arrays are fundamental in implementing hash tables for fast lookups.

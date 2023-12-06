@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.Controller">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="619.0" layoutY="19.0">
+                     <children>
+                        <Button layoutX="35.0" layoutY="-1.0" mnemonicParsing="false" onAction="#aboutProgramHandler" text="About Program" />
+                        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="-2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/about.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Separator layoutY="68.0" prefHeight="5.0" prefWidth="800.0" />
+                  <Pane layoutX="486.0" layoutY="19.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="416.0" layoutY="77.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/datastruct.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="8.0" text="Data Structures">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="117.0" mnemonicParsing="false" onAction="#dataStructuresHandler" text="Explore Now" />
+                        <Label layoutX="80.0" layoutY="43.0" prefHeight="70.0" prefWidth="220.0" text="This section visually demonstrates the workings of the chosen data structures, illustrating how they organize and manage information within the program." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="86.0" layoutY="252.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/encryptonado.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Encryptonado">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="This section provides a visual representation of our custom algorithm showcasing how we may utilize data structures in encrypting texts while showing visually how anyone can make it." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#encryptHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="415.0" layoutY="252.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/question.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="81.0" layoutY="12.0" text="Did You Know?">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="didyouknow" editable="false" layoutX="81.0" layoutY="59.0" prefHeight="97.0" prefWidth="220.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut ante nisi. Donec sollicitudin enim purus, id malesuada augue elementum at. Pellentesque lacinia a turpis sed feugiat. Praesent et rutrum ex. Proin non mattis elit. Nunc varius nibh in mollis commodo." wrapText="true" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="86.0" layoutY="75.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/application.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Applications">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="This section provides a visual representation of our custom algorithm, showcasing how it operates within the program to solve specific problems or tasks." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#applicationsMenuHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.Inventory">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandler" text="Back to Applications Menu" />
+                  <Button layoutX="225.0" layoutY="14.0" mnemonicParsing="false" onAction="#inventoryInfo" text="Inventory Info" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="269.0" text="Inventory System">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="397.0" layoutY="436.0" mnemonicParsing="false" onAction="#updateProduct" text="Update" />
+                  <Button layoutX="488.0" layoutY="436.0" mnemonicParsing="false" onAction="#searchProduct" text="Search" />
+                  <Button layoutX="300.0" layoutY="436.0" mnemonicParsing="false" onAction="#removeProduct" text="Remove" />
+                  <Button layoutX="231.0" layoutY="436.0" mnemonicParsing="false" onAction="#addProduct" text="Add" />
+                  <TableView fx:id="inventoryTable" layoutX="92.0" layoutY="60.0" prefHeight="350.0" prefWidth="610.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

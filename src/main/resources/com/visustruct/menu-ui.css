@@ -1,0 +1,40 @@
+.root {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 7px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-background-radius: 7px;
+    -fx-text-fill: black;
+}
+
+.button:hover {
+    -fx-background-color: #00b75c;
+}
+
+.button:pressed {
+    -fx-background-color: #006934;
+}
+
+.separator {
+    -fx-border-width: 0px;
+    -fx-border-color: #000000;
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-background-color: #f9f9f9;
+    -fx-prompt-text-fill: #999999;
+    -fx-text-fill: #333333;
+    -fx-border-color: #000000;
+}
+
+.text-field:focused {
+    -fx-background-color: #ffffff;
+}

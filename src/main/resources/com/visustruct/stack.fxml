@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.StackDS">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandler" text="Back to Data Structures Menu" />
+                  <Button layoutX="247.0" layoutY="14.0" mnemonicParsing="false" onAction="#resetHandler" text="Reset" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="195.0" layoutY="54.0">
+                     <children>
+                        <Pane layoutY="316.0">
+                           <children>
+                              <Rectangle arcWidth="5.0" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                              <Label fx:id="stackLabel0" layoutX="32.0" layoutY="22.0" text="Label" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutY="236.0">
+                           <children>
+                              <Rectangle arcWidth="5.0" fill="WHITE" height="80.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                              <Label fx:id="stackLabel1" layoutX="32.0" layoutY="24.0" text="Label" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutY="158.0">
+                           <children>
+                                       <Rectangle arcWidth="5.0" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                              <Label fx:id="stackLabel2" layoutX="32.0" layoutY="23.0" text="Label" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutY="79.0">
+                           <children>
+                              <Rectangle arcWidth="5.0" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                              <Label fx:id="stackLabel3" layoutX="32.0" layoutY="23.0" text="Label" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane>
+                           <children>
+                              <Rectangle arcWidth="5.0" fill="WHITE" height="80.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                              <Label fx:id="stackLabel4" layoutX="32.0" layoutY="23.0" text="Label" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Label layoutX="359.0" text="Stack">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="479.0" layoutY="99.0">
+                     <children>
+                        <TextField fx:id="pushTextField" layoutY="39.0" prefHeight="35.0" prefWidth="177.0" style="-fx-border-color: black; -fx-border-radius: 7; -fx-background-color: white;" />
+                        <Label layoutX="62.0" layoutY="-1.0" text="PUSH">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="47.0" layoutY="86.0" mnemonicParsing="false" onAction="#pushHandler" text="Confirm" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="479.0" layoutY="266.0">
+                     <children>
+                        <Button layoutX="48.0" layoutY="85.0" mnemonicParsing="false" onAction="#popHandler" text="Confirm" />
+                        <Label layoutX="69.0" text="POP">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="popTextField" layoutY="39.0" prefHeight="35.0" prefWidth="177.0" style="-fx-border-color: black; -fx-border-radius: 7; -fx-background-color: white;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="149.0" layoutY="79.0">
+                     <children>
+                        <Label fx:id="topLabel4" prefHeight="40.0" prefWidth="40.0" text="Top of Stack" textAlignment="CENTER" textFill="GREEN" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topLabel3" layoutY="72.0" prefHeight="40.0" prefWidth="40.0" text="Top of Stack" textAlignment="CENTER" textFill="GREEN" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topLabel2" layoutY="153.0" prefHeight="40.0" prefWidth="40.0" text="Top of Stack" textAlignment="CENTER" textFill="GREEN" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topLabel1" layoutY="227.0" prefHeight="40.0" prefWidth="40.0" text="Top of Stack" textAlignment="CENTER" textFill="GREEN" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="topLabel0" layoutY="307.0" prefHeight="40.0" prefWidth="40.0" text="Top of Stack" textAlignment="CENTER" textFill="GREEN" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.AboutProgram">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandler" text="Back to Main Menu" />
+                  <Label layoutX="668.0" layoutY="23.0" text="About Program">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="625.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/about.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="119.0" fitWidth="335.0" layoutX="233.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="240.0" layoutY="97.0" prefHeight="45.0" prefWidth="321.0" text="Interactive Visualization with Data Structures &amp; Algorithms" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="224.0" layoutY="159.0" prefHeight="8.0" prefWidth="353.0" />
+                  <Label layoutX="182.0" layoutY="175.0" prefHeight="134.0" prefWidth="435.0" text="This project aims to create a visual representation of data structures using JavaFX. This initiative is grounded in the understanding that visualization plays a crucial role in learning and understanding data structures. VisuaStruct also aims to provide its users with real-life examples/applications wherein they can interact with the given application and further deepen and test their knowledge of the various data structures." textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="224.0" layoutY="318.0" prefHeight="8.0" prefWidth="353.0" />
+                  <Label layoutX="355.0" layoutY="335.0" text="Contributors">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="200.0" layoutY="370.0" text="Kristina Diana L. Ocampo">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="445.0" layoutY="370.0" text="Luis Miguel G. Perez IV">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="255.0" layoutY="401.0" text="Win Clarence Sy">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="445.0" layoutY="401.0" text="Leigh Andrei M. Tabanao">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="322.0" layoutY="462.0" text="Application Version 23.12.6">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

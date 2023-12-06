@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.ApplicationsMenu">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandler" text="Back to Main Menu" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="416.0" layoutY="77.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/inventory.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="8.0" text="Inventory System">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="117.0" mnemonicParsing="false" onAction="#inventoryHandler" text="Explore Now" />
+                        <Label layoutX="80.0" layoutY="43.0" prefHeight="70.0" prefWidth="220.0" text="This applications shows the implementation of LinkedList in making a system to provide a seamless and scalable solution for tracking and organizing your products." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="86.0" layoutY="252.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/task.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Task Manager">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="This application utilizes a Stack and Map data structure to show real-world usage on making a task manager using Stacks to hold tasks while add with priority scheduling utilizing Map." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#taskHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="86.0" layoutY="75.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/stock.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="Stock Analysis">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="This application that shows a practical application for ObservableList using API to fetch daily stock price data into a graph and make predictions with our own algorithm." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#stockHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="416.0" layoutY="252.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../assets/dna.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="80.0" layoutY="11.0" text="DNA Decoder">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="80.0" layoutY="46.0" prefHeight="70.0" prefWidth="220.0" text="This application utilizes a List and Map to manage and analyze DNA sequence analysis. List is used for Input History and Map is used to map codons to their corresponding amino acids." textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="80.0" layoutY="121.0" mnemonicParsing="false" onAction="#dnaHandler" text="Explore Now" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="307.0" text="Applications">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.visustruct.Encryptonado">
+   <stylesheets>
+      <URL value="@menu-ui.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="71.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandler" text="Back to Main Menu" />
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="44.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="635.0" layoutY="25.0" text="Created by LBYCPA2 EQ3 Group 5">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="295.0" text="Encryptonado">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="75.0" layoutY="205.0">
+                     <children>
+                        <TextArea fx:id="outputTextArea" editable="false" layoutY="28.0" prefHeight="120.0" prefWidth="650.0" style="-fx-border-color: black; -fx-border-radius: 5;" wrapText="true" />
+                        <Label text="Output:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="138.0" layoutY="379.0">
+                     <children>
+                        <Button layoutX="441.0" mnemonicParsing="false" onAction="#encryptHandler" text="Encrypt" />
+                        <Button layoutX="440.0" layoutY="52.0" mnemonicParsing="false" onAction="#decryptHandler" text="Decrypt" />
+                        <TextArea fx:id="inputTextArea" prefHeight="87.0" prefWidth="389.0" style="-fx-border-color: black; -fx-border-radius: 5;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="75.0" layoutY="47.0">
+                     <children>
+                        <Label fx:id="logTextArea" text="Encryption Logs:">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="logOutput" layoutX="75.0" layoutY="74.0" prefHeight="120.0" prefWidth="650.0" style="-fx-border-color: black; -fx-border-radius: 5;" text="Label" wrapText="true" />
+                  <TextArea fx:id="logOutputTest" editable="false" layoutX="75.0" layoutY="74.0" prefHeight="120.0" prefWidth="650.0" style="-fx-border-color: black; -fx-border-radius: 5;" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
