@@ -1,5 +1,6 @@
 # VisuaStruct
 - Interactive Visualization with Data Structures & Algorithms
+- Made by LBYCPA2 EQ3 Group 5
 
 ## Programming Language:
 - [Java SE](https://www.oracle.com/java/technologies/java-se-glance.html) with [JavaFX](https://openjfx.io/)
