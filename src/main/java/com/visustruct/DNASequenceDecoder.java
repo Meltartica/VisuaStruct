@@ -139,25 +139,10 @@ public class DNASequenceDecoder {
     @FXML
     public void decodeDNASequence() {
         String dnaSequence = dnaSequenceInput.getText();
-        if (!isValidDNASequence(dnaSequence)) {
-            showInvalidInputDialog();
-            return;
-        }
+
         dnaSequenceHistory.add(dnaSequence);
         String aminoAcidSequence = decodeDNASequence(dnaSequence);
         aminoAcidOutput.setText(aminoAcidSequence);
-    }
-
-    private boolean isValidDNASequence(String dnaSequence) {
-        if (dnaSequence.length() % 3 != 0) {
-            return false;
-        }
-        for (char c : dnaSequence.toCharArray()) {
-            if (c != 'A' && c != 'T' && c != 'C' && c != 'G') {
-                return false;
-            }
-        }
-        return true;
     }
 
     private void showInvalidInputDialog() {
